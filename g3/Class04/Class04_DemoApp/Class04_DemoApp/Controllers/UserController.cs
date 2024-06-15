@@ -22,6 +22,12 @@ namespace Class04_DemoApp.Controllers
 
             return View(result);
         }
+        public IActionResult Details()
+        {
+            var result = StaticDb.Users;
+
+            return View(result);
+        }
 
         public IActionResult UsersViewBag()
         {
